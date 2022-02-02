@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação</title>
+</head>
+<style>
+    button {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        width: 85px;
+        height: 30px;
+    }
+
+    button:hover {
+        border: #7aaff5 solid;
+
+    }
+
+    input {
+        background-color: #96dafa;
+        border-radius: 10px;
+        width: 130px;
+        height: 30px;
+        border: none;
+        margin-right: 10px;
+    }
+
+    input:hover {
+        background-color: #74dffc;
+    }
+
+    main {
+        width: 200px;
+        height: 150px;
+        border: solid;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: #b3b3b3;
+    }
+    
+   ::placeholder {
+   text-align:center;
+   opacity:1;
+   }
+</style>
+
+<body>
+
+    <div id='app' align=center style="margin-top: 100px;">
+        <form>
+            <input type="text" placeholder="Digite o CEP">
+            <button>Verificar</button>
+        </form>
+        <main></main>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src='index.js'></script>
+    </div>
+
+</body>
+
+</html>
